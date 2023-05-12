@@ -1,0 +1,31 @@
+/* CSS's */
+@import url("reset.css");
+@import url("header.css");
+@import url("footer.css");
+
+/* Variables */
+:root {
+    /* Geral */
+    --color-main: #ff6c0a;
+    --color-main-hover: #fa8639;
+    --color-background: #e6e6e6;
+    --color-text: #000000;
+    
+    /* Header */
+    --color-header: #ffffff;
+    --color-botton-titulo: #ffffff;
+    --color-botton: #f3f3f3;
+    --color-botton-hover: #dfdfdf;
+}
+
+body {
+    background-color: var(--color-background);
+}
+
+main {
+    padding-top: 10rem;
+}
+
+
+
+

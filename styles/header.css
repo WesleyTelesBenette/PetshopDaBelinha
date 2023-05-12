@@ -1,0 +1,85 @@
+
+.header {
+    background-color: var(--color-main);
+    position: fixed;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100vw;
+    height: 4rem;
+}
+
+.header__section {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.header__menu {
+    display: inline-block;
+    background-repeat: no-repeat;
+    
+    background-image: url("../sources/taskbar/Menu.png");
+    background-size: 2.6rem;
+    background-position: center;
+    filter: brightness(10);
+
+    padding: 0.8rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.header__menu:hover {
+    filter: brightness(1);
+    background-color: var(--color-main-hover);  
+}
+
+.header__menu-checkbox {
+    display: none;
+}
+
+.header__menu-lista {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    padding: 0rem;
+}
+
+.header__menu-checkbox:checked~.header__menu-lista {
+    display: block;
+}
+
+.header__menu-lista-item-titulo {
+    color: var(--color-botton-titulo);
+    padding: 1rem 15vw;
+    background-color: var(--color-main-hover);
+}
+
+.header__menu-lista-item {
+    padding: 1rem;
+    background-color: var(--color-botton);
+}
+
+.header__menu-lista-item:hover {
+    background-color: var(--color-botton-hover);
+    border: 0.1rem solid var(--color-main);
+}
+
+.header__menu-lista-link {
+    color: var(--color-text);
+}
+
+.header__item {
+    padding: 0.8rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.header__item:hover {
+    background-color: var(--color-main-hover);    
+}
