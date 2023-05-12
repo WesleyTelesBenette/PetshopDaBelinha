@@ -9,11 +9,11 @@
     --color-main: #ff6c0a;
     --color-main-hover: #fa8639;
     --color-background: #e6e6e6;
-    --color-text: #000000;
+    --color-text-white: #ffffff;
+    --color-text-black: #000000;
     
     /* Header */
     --color-header: #ffffff;
-    --color-botton-titulo: #ffffff;
     --color-botton: #f3f3f3;
     --color-botton-hover: #dfdfdf;
 }
@@ -23,9 +23,66 @@ body {
 }
 
 main {
-    padding-top: 10rem;
+    padding-top: 4rem;
 }
 
+.main__banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-image: url("../sources/banner/Banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-shadow: -0.1rem 0.1rem 0.3rem #000000;
 
+    color: var(--color-text-white);
+    font-size: 1.1rem;
+    padding: 2rem;
+}
+
+.main__banner-title {
+    font-size: 2.2rem;
+}
+
+.main__banner-input {
+    margin-top: 2rem;
+    padding: 0.5rem 3rem;
+    width: 50vw;
+
+    border: none;
+    box-shadow: -0.1rem 0.1rem 0.3rem #00000091;
+    border-radius: 0.5rem;
+}
+
+.main__banner-input:focus {
+    outline-color: var(--color-main);
+}
+
+.main__banner-buttons {
+    height: 4rem;
+}
+
+.main__banner-button {
+    padding: 0.5rem 3rem;
+    background-color: var(--color-text-white); /* Green */
+    border: none;
+    box-shadow: -0.1rem 0.1rem 0.3rem #00000091;
+    border-radius: 0.5rem;
+    color: var(--color-text-black);
+    font-size: auto;
+    width: 10rem;
+    height: 2rem;
+    
+    text-align: center;
+
+    transition: all 100ms ease-in-out;
+}
+
+.main__banner-button:hover {
+    background-color: var(--color-main);
+    color: var(--color-text-white);
+    cursor:pointer;
+}
 
 

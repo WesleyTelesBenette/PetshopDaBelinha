@@ -16,7 +16,10 @@
 .header__section {
     display: flex;
     flex-direction: row;
+    align-items: center;
     padding: 1rem;
+
+    color: var(--color-text-white);
 }
 
 .header__menu {
@@ -55,14 +58,16 @@
 }
 
 .header__menu-lista-item-titulo {
-    color: var(--color-botton-titulo);
+    color: var(--color-text-white);
     padding: 1rem 15vw;
     background-color: var(--color-main-hover);
 }
 
 .header__menu-lista-item {
     padding: 1rem;
+    border: 0.1rem solid var(--color-botton);
     background-color: var(--color-botton);
+    transition: all 150ms ease-in-out;
 }
 
 .header__menu-lista-item:hover {
@@ -71,7 +76,13 @@
 }
 
 .header__menu-lista-link {
-    color: var(--color-text);
+    color: var(--color-text-black);
+}
+
+.header__icon {
+    padding: 0.8rem;
+    width: 2rem;
+    height: 2rem;
 }
 
 .header__item {
